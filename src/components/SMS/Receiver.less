@@ -1,0 +1,124 @@
+@import './common.less';
+.receiver_layout {
+  // width: @reciverLayoutWidth;
+  height: 100%;
+  float: left;
+  .receiver_top_box {
+    width: 100%;
+    height: @topHeight;
+    clear: both;
+    background-color: #ecf6ff;
+    text-align: left;
+    .receiver_user_icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../assets/message/接收人.png");
+      vertical-align: text-bottom;
+      margin-left: 15px;
+    }
+    .receiver_user {
+      // float: left;
+      margin-left: 4px;
+      // width: 65px;
+      display: inline-block;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: @topHeight;
+    }
+    .receiver_input {
+      margin-left: 10px;
+      float: left;
+      height: 25px;
+      margin-top: 5px;
+    }
+    .search_box {
+      // display: block;
+      margin-left: 15px;
+      margin-top: 3px;
+      float: left;
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      border-radius: 4px;
+      // background-color: #65a4d8;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .show {
+      display: none;
+    }
+  }
+  .receiver_body {
+    // margin-top: 5px;
+    height: calc(100% - 62px);
+    width: 100%;
+    padding-top: 17px;
+    // background-color: #fff;
+    // overflow: auto;
+    // .scroll();
+    .nd_input {
+      margin: 0 auto 17px;
+      width: 240px;
+      position: relative;
+      cursor: pointer;
+      .receiver_input {
+        border: 1px solid #b5bfc2;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #000;
+        height: 32px;
+        display: inline-block;
+        outline: none;
+        padding: 0 25px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #dcdfe6;
+        transition: border-color .2s cubic-bezier(0.645, 0.045, 0.335, 1);
+        &:hover {
+          border-color: #c0c4cc;
+        }
+        &:focus {
+          outline: none;
+          border-color: #409EFF;
+        }
+      }
+      .nd_input__icon {
+        position: absolute;
+        left: 5px;
+        top: 7px;
+        height: 18px;
+        width: 18px;
+        background-image: url("../../assets/message/search.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        display: inline-block;
+      }
+      .nd_input__icon_del {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../../assets/message/del_n.png");
+        background-size: cover;
+        display: inline-block;
+        // display: none;
+      }
+    }
+    .ztree_box {
+      width: 100%;
+      height: calc(100% - 49px);
+      overflow: auto;
+      .scroll();
+    }
+  }
+}
