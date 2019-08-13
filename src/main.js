@@ -7,7 +7,10 @@ import App from './App.vue'
 import axios from 'axios'
 import Ztree from 'cll-vue-components/plugins/ztree'
 import store from './store/store.js'
+import ElementUI from 'element-ui' // 声明UI组件
+import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(ElementUI) // 使用UI组件
 Vue.use(VuePlugin)// 或者传入参数对象 Vue.use(VuePlugin,{})
 Vue.use(Ztree)
 // axios是一个基于promise的HTTP库，
